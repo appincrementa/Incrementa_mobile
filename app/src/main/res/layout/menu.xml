@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#A4A4A4" />
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/View1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/incrementa_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+      <Button
+          android:id="@+id/btnMiCuenta"
+          style="@style/estilo_boton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="4dp"
+          android:layout_weight="1"
+          android:text="@string/btnMiCuenta"
+          android:textColor="#FFFFFF" />
+ 
+  <Button
+      android:id="@+id/btnOtrasSolicitudes"
+      style="@style/estilo_boton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="4dp"
+      android:layout_weight="1"
+      android:text="@string/btnOtrasSolicitudes"
+      android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View2"
+        android:layout_marginTop="33dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnReportes"
+            style="@style/estilo_boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="@string/btnReporteClarity"
+            android:textColor="#FFFFFF" />
+
+         <Button
+             android:id="@+id/btnIngresoIncidentes"
+             style="@style/estilo_boton"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_margin="4dp"
+             android:layout_weight="1"
+             android:text="@string/btnIngresoIncidentes"
+             android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
